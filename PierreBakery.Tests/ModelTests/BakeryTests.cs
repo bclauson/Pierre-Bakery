@@ -29,5 +29,13 @@ namespace BreadSpace.Tests
       int result = newBread.Cost();
       Assert.AreEqual(10,result);
     }
+
+    [TestMethod]
+    public void BreadThreeCost_CalcBreadThreeCost_Bread()
+    {
+      Bread newBread = new Bread(3);
+      int result = newBread.Cost();
+      Assert.AreEqual(10,result);
+    }
   }
 }
