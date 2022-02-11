@@ -1,0 +1,6 @@
+bin/
+obj/
+PierreBakery/obj
+PierreBakery/bin
+PierreBakery.Tests/obj
+PierreBakery.Tests/bin
