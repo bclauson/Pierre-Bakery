@@ -1,17 +1,25 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BakerySpace.Models;
+using BreadSpace.Models;
 using System.Collections.Generic;
 
-namespace BakerySpace.Tests
+namespace BreadSpace.Tests
 {
   [TestClass]
-  public class BakeryTests
+  public class BreadTests
   {
     [TestMethod]
-    public void BakeryConstructor_CreateBakeryConstructor_Bakery()
+    public void BreadConstructor_CreateBreadConstructor_Bread()
     {
-      Bakery newBakery = new Bakery(1);
-      Assert.AreEqual(typeof(Bakery), newBakery.GetType());
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+
+    [TestMethod]
+    public void BreadSingleCost_CalcBreadCost_Bread()
+    {
+      Bread newBread = new Bread(1);
+      int result = newBread.Cost();
+      Assert.AreEqual(5,result);
     }
   }
 }
