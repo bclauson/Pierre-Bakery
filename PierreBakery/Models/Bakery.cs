@@ -40,28 +40,9 @@ namespace PastrySpace.Models
     public int Cost()
     {
       int finalCost = 0;
-      // int remainder = 0;
 
       finalCost += (PastryDemand / 3) * 5;
       finalCost += (PastryDemand % 3) * 2;
-      // finalCost += (PastryDemand / 6) * 10;
-      // remainder = (PastryDemand % 6);
-      // if (remainder == 5)
-      // {
-      //   finalCost += 9;
-      // }
-      // else if (remainder == 4)
-      // {
-      //   finalCost += 7;
-      // }
-      // else if (remainder == 3)
-      // {
-      //   finalCost += 5;
-      // }
-      // else
-      // {
-      //   finalCost += remainder * 2;
-      // }
 
       return finalCost;
       
