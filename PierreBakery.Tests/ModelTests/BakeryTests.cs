@@ -69,5 +69,13 @@ namespace PastrySpace.Tests
       int result = newPastry.Cost();
       Assert.AreEqual(2, result);
     }
+
+    [TestMethod]
+    public void PastryDoubleCost_CalcPastryCost_Pastry()
+    {
+      Pastry newPastry = new Pastry(2);
+      int result = newPastry.Cost();
+      Assert.AreEqual(4, result);
+    }
   }
 }
