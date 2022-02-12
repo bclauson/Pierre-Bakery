@@ -66,7 +66,7 @@ namespace PastrySpace.Tests
     public void PastrySingleCost_CalcPastryCost_Pastry()
     {
       Pastry newPastry = new Pastry(1);
-      int result = newPastry.cost();
+      int result = newPastry.Cost();
       Assert.AreEqual(2, result);
     }
   }
