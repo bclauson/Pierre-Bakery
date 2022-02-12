@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BreadSpace.Models;
+using PastrySpace.Models;
 using System.Collections.Generic;
+
 
 namespace BreadSpace.Tests
 {
@@ -44,6 +46,28 @@ namespace BreadSpace.Tests
       Bread newBread = new Bread(7);
       int result = newBread.Cost();
       Assert.AreEqual(25,result);
+    }
+  }
+}
+
+namespace PastrySpace.Tests
+{
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void PastryConstructor_CreatePastryConstructor_Pastry()
+    {
+      Pastry newPastry = new Pastry(1);
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+
+    [TestMethod]
+    public void PastrySingleCost_CalcPastryCost_Pastry()
+    {
+      Pastry newPastry = new Pastry(1);
+      int result = newPastry.cost();
+      Assert.AreEqual(2, result);
     }
   }
 }
